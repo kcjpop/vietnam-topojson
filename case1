@@ -1,0 +1,11 @@
+CASE
+WHEN "ID_1" = 1 THEN 'Đồng Bằng Sông Cửu Long'
+WHEN "ID_1" = 2 THEN 'Đồng Bằng Sông Hồng'
+WHEN "ID_1" = 3 THEN 'Đông Bắc'
+WHEN "ID_1" = 4 THEN 'Đông Nam Bộ'
+WHEN "ID_1" = 5 THEN 'Bắc Trung Bộ'
+WHEN "ID_1" = 6 THEN 'Nam Trung Bộ'
+WHEN "ID_1" = 7 THEN 'Tây Bắc'
+WHEN "ID_1" = 8 THEN 'Tây Nguyên'
+ELSE "NAME_1"
+END
