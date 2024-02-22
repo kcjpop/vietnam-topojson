@@ -1,0 +1,20 @@
+{
+  "name": "@kcjpop/vietnam-topojson-web",
+  "type": "module",
+  "scripts": {
+    "clean": "rm -rf docs/.observablehq/cache",
+    "build": "rm -rf dist && observable build",
+    "dev": "observable preview --port 6002",
+    "meta": "node build-meta.js",
+    "topo": "mapshaper data/*.geojson -rename-layers districts,centers -o format=topojson data/"
+  },
+  "dependencies": {
+    "@observablehq/framework": "1.0.0",
+    "better-sqlite3": "9.4.1",
+    "d3-dsv": "3.0.1",
+    "d3-time-format": "4.1.0"
+  },
+  "engines": {
+    "node": ">=20.6"
+  }
+}

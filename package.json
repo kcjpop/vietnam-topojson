@@ -1,0 +1,19 @@
+{
+  "name": "vietnam-topojson",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "GeoJSON/ TopoJSON for all administrative levels in Vietnam",
+  "keywords": [
+    "vietnam",
+    "topojson",
+    "geojson"
+  ],
+  "author": "An Cao <kcj.pop.com@gmail.com>",
+  "license": "MPL-2.0",
+  "scripts": {
+    "dev": "pnpm run --filter '@kcjpop/vietnam-topojson-web' dev"
+  },
+  "dependencies": {
+    "@kcjpop/vietnam-topojson-data": "workspace:*"
+  }
+}

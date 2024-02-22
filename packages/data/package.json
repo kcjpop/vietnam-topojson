@@ -1,0 +1,23 @@
+{
+  "name": "@kcjpop/vietnam-topojson-data",
+  "version": "0.1.0",
+  "description": "GeoJSON and TopoJSON data files",
+  "engines": {
+    "node": ">=20.6"
+  },
+  "scripts": {
+    "meta": "node build-meta.js",
+    "topo": "mapshaper data/*.geojson -rename-layers districts,centers -o format=topojson data/"
+  },
+  "devDependencies": {
+    "got": "14.2.0",
+    "mapshaper": "0.6.65",
+    "osmtogeojson": "3.0.0-beta.5",
+    "prettier": "3.2.5",
+    "slugify": "1.6.6"
+  },
+  "exports": {
+    "./*.json": "./dist/*.json",
+    "./*.geojson": "./dist/*.geojson"
+  }
+}

@@ -1,0 +1,10 @@
+.DS_Store
+dist/
+docs/.observablehq/cache/
+node_modules/
+yarn-error.log
+
+# Don't include sqlite dbs in git because they're big
+# and people can always download the latest data
+# as instructed in README.md
+docs/data/*.db*
